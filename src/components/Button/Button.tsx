@@ -1,7 +1,5 @@
 'use client'
 
-import type { SectionWithBucket } from '@/types/component'
-
 interface ButtonProps {
   type: 'solid' | 'outline'
   position: 'left' | 'center' | 'right' | 'center-left'
@@ -10,8 +8,10 @@ interface ButtonProps {
 }
 
 const typeClasses = {
-  solid: 'bg-slate text-white border-slate hover:bg-transparent hover:text-slate active:bg-orange active:text-slate',
-  outline: 'bg-transparent text-slate border-slate hover:bg-slate hover:text-white active:bg-slate active:text-white',
+  solid:
+    'bg-slate text-white border-slate hover:bg-transparent hover:text-slate active:bg-orange active:text-slate',
+  outline:
+    'bg-transparent text-slate border-slate hover:bg-slate hover:text-white active:bg-slate active:text-white',
   animate: 'transition-all duration-300 ease-in-out',
 }
 
