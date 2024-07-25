@@ -29,9 +29,11 @@ export default function Button({ type, position, label, action }: ButtonProps) {
 
   const conditionalStyles = ''
   return (
-    <div className={`flex ${positionClasses?.[position] || ''}`}>
+    <div className={`flex  change2 ${positionClasses?.[position] || ''}`}>
       <button
-        className={`rounded-4xl border px-7 py-3 uppercase ${typeClasses?.[type] || ''} ${typeClasses?.['animate'] || ''}`}
+        className={`rounded-4xl border px-7 py-3 uppercase ${typeClasses?.[type] || ''} ${
+          typeClasses?.['animate'] || ''
+        }`}
         onClick={clickHandler}
       >
         <span className="inline-block pb-[1px]">{label}</span>
