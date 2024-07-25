@@ -2,6 +2,8 @@ import Button from '@/components/Button/Button'
 import Image from 'next/image'
 
 export default function Home() {
+  console.log('jl')
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Button type="solid" position="center-left" label="test" action="test" />

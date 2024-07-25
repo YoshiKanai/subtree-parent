@@ -24,7 +24,7 @@ const positionClasses = {
 
 export default function Button({ type, position, label, action }: ButtonProps) {
   const clickHandler = (e: React.MouseEvent): void => {
-    console.log(type, action, e)
+    console.log(type, action)
   }
 
   const conditionalStyles = ''
