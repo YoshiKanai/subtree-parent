@@ -4,5 +4,9 @@ interface CopyProps {
 }
 
 export default function Copy({ type, body }: CopyProps) {
-  return <div className={`${type} mt-10`} dangerouslySetInnerHTML={{ __html: body }}></div>
+  return (
+    <div className="change1">
+      <div className={`${type} mt-10`} dangerouslySetInnerHTML={{ __html: body }}></div>
+    </div>
+  )
 }
